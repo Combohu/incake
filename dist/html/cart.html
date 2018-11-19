@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="shortcut icon" href="/images/header/tubiao.ico">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <header></header>
+    <!--网页全局！-->
+    <div class="page_container">
+      <!--购物车部分头部-->
+      <div class="basket_header">
+        <div class="tittle">
+          <h2>SHOPPING BASKET</h2>
+          <p>
+            <span>购物篮</span>
+            <i></i>
+          </p>
+        </div>
+        <div class="process">
+          <div class=" step step1">
+            <p>我的购物篮</p>
+          </div>
+          <div class=" step step2">
+            <p>填写和提交订单信息</p>
+          </div>
+          <div class="step step3">
+            <p>成功提交订单</p>
+          </div>
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+      </div>
+      <!--购物车主体-->
+      <div class="basket_container">
+        <div class="list_wrapper">
+          <p class="list_header">
+            <span class="checkAll">
+              <i>全选</i>
+            </span>
+            <span class="product">商品</span>
+            <span class="attr">属性</span>
+            <span class="amount">数量</span>
+            <span class="spec">规格</span>
+            <span class="price">单价</span>
+            <span class="cheaper">小计</span>
+            <span class="operate">操作</span>
+          </p>
+          <!--列表主体-->
+          <div class="list_content">
+            <div class="list_container">
+              <ul class="list_regular" id="list_active">
+                <script type="text/html" id="pro_template">
+                {{each cookies json i}}
+                <li class="item">
+                  <div class="item_content">
+                    <div class="ckBox">
+                      <input class="btn_ckBox" type="checkbox" checked="checked"></a>
+                    </div>
+                    <div class="c_product">
+                      <a href="http://localhost:1807/html/detail.html?id=1" class="img">
+                        <img src="{{json.pictrue}}">
+                      </a>
+                      <div class="c_text">
+                          <div class="c_textCenter">
+                            <p class="cn">{{json.name}}</p>
+                            <p class="en">{{json.name}}</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="c_attr">
+                      <div class="c_attrCenter">
+                        <p>{{json.shuXing}}</p>
+                      </div>
+                    </div>
+                    <div class="c_amount">
+                      <div class="content">
+                        <a href="javascript:;" class="btn_sub"></a>
+                        <div class="amount_wrap">
+                          <input type="text" class="text_amout" value="{{json.num}}" id="text_amout">
+                        </div>
+                        <a href="javascript:;" class="btn_add"></a>
+                      </div>
+                    </div>
+                    <div class="c_spec">
+                      <div class="c_specCenter">
+                        <p>{{json.guiGe}}</p>
+                      </div>
+                    </div>
+                    <div class="c_price">
+                      <div class="c_priceCenter">
+                        <p>{{json.price}}</p>
+                      </div>
+                    </div>
+                    <div class="c_cheaper">
+                      <div class="c_cheaperCenter">
+                        <p class="xiaoJi">{{json.price * json.num}}</p>
+                      </div>
+                    </div>
+                    <div class="c_operate">
+                      <div class="c_operateCenter">
+                        <a href="http://localhost:1807/html/cart.html" class="btn_del">删除</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                {{/each}}
+                </script>
+              </ul>
+            </div>
+              <a href="http://localhost:1807/index.html" class="empty_basket"></a>
+          </div>
+          <!--列表尾部-->
+          <div class="list_footer" id="list_footer">
+            <p class="footer_checkALL">
+              <input class="text_checkALL" type="checkbox" checked="checked"><span>全选</span>
+            </p>
+            <div class="footer_container">
+              <p>
+                <span class="yiXuan">已选0件商品</span>
+                <span class="yunFei">(不包含运费)</span>
+              </p>
+              <p>
+                <span>共</span>
+                <span class="dollar">￥</span>
+                <span class="money" id="money">0.00</span>
+              </p>
+              <a href="javascript:;" class="settle">去结算</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--购物车尾部！-->
+      <div class="basket_footer">
+          <div class="parts_wrapper">
+            <p class="parts_header">餐盘和蜡烛</p>
+            <div class="parts_container">
+              <div class="part_item">
+                <a href="javascript:;" class="img">
+                  <img src="/images/cart/img1.jpg">
+                </a>
+                <div class="text">
+                  <p class="name">
+                    <span class="cn">盘叉</span>
+                    <span class="en">cake plate</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥2.50</span>
+                    <span class="pound">/5份</span>
+                  </p>
+                </div>
+              </div>
+              <div class="part_item">
+                <a href="javascript:;" class="img">
+                  <img src="/images/cart/img2.jpg">
+                </a>
+                <div class="text">
+                  <p class="name">
+                    <span class="cn">数字蜡烛</span>
+                    <span class="en">number candle</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥2.00</span>
+                    <span class="pound">/1份</span>
+                  </p>
+                </div>
+              </div>
+              <div class="part_item">
+                <a href="javascript:;" class="img">
+                  <img src="/images/cart/img3.jpg">
+                </a>
+                <div class="text">
+                  <p class="name">
+                    <span class="cn">I love you蜡烛</span>
+                    <span class="en">i love you candle</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥8.00</span>
+                    <span class="pound">/1份</span>
+                  </p>
+                </div>
+              </div>
+              <div class="part_item">
+                <a href="javascript:;" class="img">
+                  <img src="/images/cart/img4.jpg">
+                </a>
+                <div class="text">
+                  <p class="name">
+                    <span class="cn">Happy Birthday蜡烛</span>
+                    <span class="en">happy birthday candle</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥10.00</span>
+                    <span class="pound">/1份</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <footer></footer>
+<script src="/libs/require/require.js" charset="utf-8" data-main="/js/cart.js"></script>
+  </body>
+</html>

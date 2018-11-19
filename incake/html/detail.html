@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="shortcut icon" href="/images/header/tubiao.ico">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+  <header></header>
+  <!--购买界面！-->
+  <div id="baoguo">
+  <script type="text/html" id="detail_template">
+  <div class="detail_container">
+    <div class="detail_wrapper">
+      <div class="preview">
+        <div class="preview_wrapper">
+          <a href="" class="preview_aBtn">
+            <div class="preview_big">
+              <img src="{{product.preview_big}}" id="preview_big">
+            </div>
+          </a>
+          <div class="preview_small">
+            <a href="javascript:;"class="preview_smallPrev"></a>
+            <a href="javascript:;"class="preview_smallNext"></a>
+              <div class="preview_small_wrapper">
+                <ul class="preview_list">
+                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small1}}" id="preview_small1"></a></li>
+                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small2}}" id="preview_small2"></a></li>
+                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small3}}" id="preview_small3"></a></li>
+                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small4}}" id="preview_small4"></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="introduce">
+        <p class="tittle" id="introduce_tittle">{{product.introduce_tittle}}</p>
+        <div class="desc">
+          <p id="desc">{{product.desc}}</p>
+        </div>
+        <div class="specific">
+          <div class="section1">
+            <p class="left">规格：</p>
+            <div class="specific_pound">
+              <span class="spec" id="spec">1.2磅</span>
+              <span class="spec">2.2磅</span>
+              <span class="spec">3.2磅</span>
+              <span class="spec">5.2磅</span>
+            </div>
+            </div>
+        <div class="section2">
+          <p class="price">款项：</p>
+            <div class="specific_price">
+                <span class="oldPrice" id="oldPrice">{{product.oldPrice}}</span>
+                <span class="newPrice">￥<i id="newPrice">{{product.newPrice}}</i></span>
+                <span class="name">常规款</span>
+                <span class="radio"></span>
+            </div>
+        </div>
+        </div>
+        <!--注意事项！-->
+        <ul class="tips">
+          <li><p>14CM*14CM*4.5CM=6寸,约510g</p></li>
+          <li><p>免费赠送5套餐具</p></li>
+          <li><p>适合4-5人食用</p></li>
+          <li><p>至少提前1天预定</p></li>
+        </ul>
+        <div class="amout">
+          <div class="num">
+            数量：
+          </div>
+          <div class="content">
+            <a href="javascript:;" class="btn_sub"></a>
+            <div class="content-wrapper">
+              <input type="text" class="text_amout" value="1">
+            </div>
+            <a href="javascript:;" class="btn_add"></a>
+          </div>
+        </div>
+        <div class="addons">
+          <ul>
+            <li>
+              <div class="img">
+                <img src="/images/detail/lihe.jpg">
+              </div>
+              <div class="lihe_content">
+                <p>下午茶缤纷礼盒-订单配送完成后中通快递发货</p>
+                <span class="lihe_price">￥11.10</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="option">
+          <a href="javascript:;"class="a_favor">
+            <span class="aixin"></span>
+            <span class="txt">喜欢</span>
+          </a>
+          <a href="javascript:;" class="add_basket" id="add_basket">放入购物篮</a>
+          <a href="http://localhost:1807/html/cart.html"  target="_blank" class="buy">立即购买</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--商品详情！-->
+    <div class="product_detail">
+      <div class="header">
+        <a href="javascript:;" class="txt_product">商品详情</a>
+        <a href="javascript:;" class="txt_product">商品评价</a>
+      </div>
+      <div class="product_detail1">
+          <div class="product_detail1Wrapper">
+            <div class="left">
+              <div class="img">
+                <img src="{{product.preview_bigger}}" id="preview_bigger">
+              </div>
+              <ul class="left_text">
+                <li>
+                  <p class="left_tittle">甜度:</p>
+                  <p class="left_content">
+                    <span class="red"></span>
+                    <span class="red"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </p>
+                </li>
+                <li>
+                  <p class="left_tittle">口味:</p>
+                  <p class="left_content" id="left_content1">{{product.left_content1}}</p>
+                </li>
+                <li>
+                  <p class="left_tittle">主要原料:</p>
+                  <p class="left_content"id="left_content2">{{product.left_content2}}</p>
+                </li>
+                <li>
+                  <p class="left_tittle">包装清单:</p>
+                  <p class="left_content" id="left_content">免费赠送5套餐具</p>
+                </li>
+                <li>
+                  <p class="left_tittle">贮存条件:</p>
+                  <p class="left_content">适宜食用温度在冷藏0-4摄氏度之间。请收到蛋糕后立即放入冰箱。</p>
+                </li>
+              </ul>
+            </div>
+            <div class="right">
+                <div class="img">
+                  <img src="/images/detail/right.jpg">
+                </div>
+                <ul>
+                  <li>
+                    <span class="xinxilan_flags"></span>
+                    <p>新西兰黄油</p>
+                  </li>
+                  <li>
+                    <span class="meiguo_flags"></span>
+                    <p>美国蔓越莓</p>
+                  </li>
+                </ul>
+                <div class="brand">
+                  <div class="brand_left">
+                    <img src="/images/detail/xinxilananjia.jpg">
+                  </div>
+                  <div class="brand_right">
+                    <p>安佳源于1886年，产自新西兰，乳制品优质品牌，口感浓郁香滑。</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!--商品分层图！-->
+          <div class="hierarchy">
+            <div class="top">
+              <img src="/images/detail/top.jpg" >
+            </div>
+            <div class="bottom">
+              <img src="{{product.bottom}}" id="bottom">
+            </div>
+          </div>
+          <ul class="descr">
+              <li>
+                <div class="li1_left">
+                  <img src="{{product.list1_left}}" id="list1_left">
+                </div>
+                <div class="li1_right">
+                  <div class="li1_rightWrapper">
+                    <p id="list1_p1">{{product.list1_p1}}</p>
+                    <p id="list1_p2">{{product.list1_p2}}</p>
+                    <p id="list1_p3">{{product.list1_p3}}</p>
+                    <p id="list1_p4">{{product.list1_p4}}</p>
+                    <p id="list1_p5">{{product.list1_p5}}</p>
+                    <p id="list1_p6">{{product.list1_p6}}</p>
+                    <p id="list1_p7">{{product.list1_p7}}</p>
+                    <p id="list1_p8">{{product.list1_p8}}</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="li2_left">
+                  <img src="{{product.list2_right}}" id="list2_right">
+                </div>
+                <div class="li2_right">
+                  <div class="li1_rightWrapper">
+                    <p id="list2_p1">{{product.list1_p1}}</p>
+                    <p id="list2_p2">{{product.list2_p2}}</p>
+                    <p id="list2_p3">{{product.list2_p3}}</p>
+                    <p id="list2_p4">{{product.list2_p4}}</p>
+                    <p id="list2_p5">{{product.list2_p5}}</p>
+                    <p id="list2_p6">{{product.list2_p6}}</p>
+                    <p id="list2_p7">{{product.list2_p7}}</p>
+                    <p id="list2_p8">{{product.list2_p8}}</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <img src="{{product.list3_full}}" id="list3_full">
+              </li>
+          </ul>
+      </div>
+    </div>
+</script>
+</div>
+  <footer></footer>
+    <script src="/libs/require/require.js" charset="utf-8" data-main="/js/detail.js"></script>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>印克时光蛋糕官网</title>
+    <link rel="shortcut icon" href="images/header/tubiao.ico">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+    <header></header>
+    <!--网页主体-->
+    <div class="page-container">
+    <!--轮播图部分-->
+      <div class="main-slider">
+      <div class="slider-wrapper" id="slider-wrapper">
+        <ul>
+          <li><a href="javascript:;"><img src="/images/slider/banner1.png"></a></li>
+          <li><a href="javascript:;"><img src="/images/slider/banner2.png"></a></li>
+          <li><a href="javascript:;"><img src="/images/slider/banner3.png"></a></li>
+        </ul>
+        <ol>
+        </ol>
+        <a href="javascript:;" id="goPrev">&laquo;</a>
+        <a href="javascript:;" id="goNext">&raquo;</a>
+      </div>
+      </div>
+      <!--导航链接部分-->
+      <div class="link">
+        <div class="link-wrapper">
+        <a href="javascript:;" target="_blank"class="entry-shop"></a>
+        <a href="javascript:;" target="_blank"class="entry-inbox"></a>
+        <a href="http://localhost:1807/html/strawberry.html" target="_blank"class="entry-strawberry"></a>
+        <a href="javascript:;" target="_blank"class="entry-card"></a>
+        <a href="javascript:;" target="_blank"class="entry-ranking"></a>
+        </div>
+      </div>
+      <!--分割线-->
+      <div class="ad-line"></div>
+      <!--当季热卖-->
+      <div class="best-choice">
+          <div class="title">
+            <p class="cn">当季热卖</p>
+            <p class="en">BEST CHOICE</p>
+          </div>
+          <div class="content">
+            <ul class="list-content" id="list-content">
+              <script type="text/html" id="list-template">
+                {{each list_content  item  i}}
+              <li>
+                <div class="img">
+                  <a href="/html/detail.html?id={{item.id}}" id="img"><img src="{{item.img}}"></a>
+                </div>
+                <div class="text">
+                  <p class="desc">{{item.introduce}}</p>
+                  <p class="name">
+                    <span class="cn">{{item.cn_tittle}}</span>
+                    <span class="en">{{item.en_tittle}}</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">{{item.price}}</span>
+                    <span class="pound">{{item.pound}}</span>
+                  </p>
+                  <a href="http://localhost:1807/html/cart.html" class="ad-basket"></a>
+                </div>
+              </li>
+              {{/each}}
+          </script>
+              <!--<li>
+                <div class="img">
+                  <img src="/images/best-choice/cake12.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake3.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li class="last-col">
+                <div class="img">
+                  <img src="/images/best-choice/cake4.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake9.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake6.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake7.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li class="last-col">
+                <div class="img">
+                  <img src="/images/best-choice/cake1.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake9.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake10.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li>
+                <div class="img">
+                  <img src="/images/best-choice/cake11.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>
+              <li class="last-col">
+                <div class="img">
+                  <img src="/images/best-choice/cake12.jpg">
+                </div>
+                <div class="text">
+                  <p class="desc">如丝绒般的柔软口感</p>
+                  <p class="name">
+                    <span class="cn">经典红丝绒</span>
+                    <span class="en">Love Red Velvet</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">￥198.00/</span>
+                    <span class="pound">/1.2磅</span>
+                  </p>
+                  <a href="javascript:;" class="ad-basket"></a>
+                </div>
+              </li>-->
+            </ul>
+          </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="/libs/require/require.js" charset="utf-8" data-main="/js/index.js"></script>
+  </body>
+</html>
