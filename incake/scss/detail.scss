@@ -17,6 +17,78 @@
   width: 540px;
   height: 540px;
 }
+.detail_container .detail_wrapper .preview .preview_aBtn  .preview_big{
+  position: absolute;
+
+}
+.detail_container .detail_wrapper .preview .preview_aBtn .len{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: 995;
+  opacity: 0.3;
+  display: none;
+}
+#bigImg1{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 99;
+}
+#bigImg2{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 98;
+}
+#bigImg3{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 97;
+}
+#bigImg4{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 96;
+}
+.detail_container .detail_wrapper .preview .preview_aBtn .preview_big1{
+  position: absolute;
+  display: block;
+  z-index: 99;
+}
+.detail_container .detail_wrapper .preview .preview_aBtn .preview_big2{
+  position: absolute;
+  display: none;
+  z-index: 98;
+
+}
+.detail_container .detail_wrapper .preview .preview_aBtn .preview_big3{
+  position: absolute;
+  display: none;
+  z-index: 97;
+
+}
+.detail_container .detail_wrapper .preview .preview_aBtn .preview_big4{
+  position: absolute;
+  display: none;
+  z-index: 96;
+}
+.fangDaJing{
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 140px;
+  left: 532px;
+  border: 1px solid black;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
+}
 .detail_container .detail_wrapper .preview .preview_wrapper{
   width: 540px;
   height: 540px;
@@ -638,3 +710,63 @@
     line-height: 24px;
     text-align: left;
   }
+  .bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url(/images/detail/bg.png);
+    z-index: 999;
+    display: none;
+    }
+  .bigBox{
+    width: 440px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right:0;
+    margin:auto;
+    background-color: #fff;
+    border-radius: 8px;
+    border:2px solid #e9546b;
+    box-shadow: 1px  1px 5px 0 #e9546b;
+    position: fixed;
+    z-index: 999;
+  }
+.info{
+  width: 100%;
+  height: 30px;
+  padding: 100px 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.btn-cancel{
+  display: block;
+  float: left;
+  width: 50%;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background-color: #fb657d;
+}
+.btn{
+  width: 440px;
+  height: 60px;
+}
+.btn-sure{
+  display: block;
+  float: left;
+  width: 50%;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  background-color: #e9546b;
+}

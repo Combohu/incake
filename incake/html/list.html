@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="shortcut icon" href="/images/header/tubiao.ico">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+  <header></header>
+  <div class="page list-page" id="listPage">
+        <div class="page_container">
+            <ul class="list-categories">
+                <li class="first">
+                    <div class="title">商品：</div>
+                    <div class="content">
+                        <a class="active" href="javascript:;void(0)" id="all">全部</a>
+                        <a href="javascript:;void(0)" id="zs" class="num1">芝士系列</a>
+                        <a href="javascript:;javascript:;void(0)" id="qkl" class="num2">巧克力系列</a>
+                        <a href="javascript:;javascript:;void(0)" id="npl" class="num3">拿破仑系列</a>
+                        <a href="javascript:;javascript:;void(0)" id="ms" class="num4">慕斯系列</a>
+                        <a href="javascript:;javascript:;void(0)" id="rz" class="num5">乳脂系列</a>
+                        <a href="javascript:;javascript:;void(0)" id="xp" class="num6">选拼系列</a>
+                    </div>
+                    </li>
+                <li>
+                    <div class="title">口味：</div>
+                    <div class="content">
+                        <a href="javascript:;void(0)" id="kw-npl">拿破仑</a>
+                        <a href="javascript:;void(0)" id="kw-sg">水果</a>
+                        <a href="javascript:;void(0)" id="kw-zs">芝士</a>
+                        <a href="javascript:;void(0)" id="kw-qkl">巧克力</a>
+                        <a href="javascript:;void(0)" id="kw-ms">慕斯</a>
+                        <a href="javascript:;void(0)" id="kw-kf">咖啡</a>
+                        <a href="javascript:;void(0)" id="kw-xn">鲜奶</a>
+                        <a href="javascript:;void(0)" id="kw-wt">无糖</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-contents" id="cakeList">
+              <!--//数据库渲染-->
+              <script type="text/html" id="list-template">
+                {{each list_contents  item  i}}
+              <li class="normal">
+                <div class="img">
+                  <a href="/html/detail.html?id={{item.id}}" id="link">
+                  <img src="{{item.img}}"></a>
+                </div>
+                <div class="text">
+                  <p class="desc">{{item.introduce}}</p>
+                  <p class="name">
+                    <span class="cn">{{item.cn_tittle}}</span>
+                    <span class="en">{{item.en_tittle}}</span>
+                  </p>
+                  <p class="attr">
+                    <span class="price">{{item.price}}</span>
+                    <span class="pound">{{item.pound}}</span>
+                  </p>
+                  <a href="/html/detail.html?id={{item.id}}" class="ad-basket"></a>
+                </div>
+              </li>
+              {{/each}}
+          </script>
+        <!--  //假数据渲染-->
+          <!--<script type="text/html" id="list-template">
+            {{each list_contents  item  i}}
+          <li class="normal">
+            <div class="img">
+              <a href="/html/detail.html?id={{item.id}}" id="link">
+              <img src="{{item.image}}"></a>
+            </div>
+            <div class="text">
+              <p class="desc">{{item.title}}</p>
+              <p class="name">
+                <span class="cn">{{item.tittle}}</span>
+                <span class="en">{{item.tittle}}</span>
+              </p>
+              <p class="attr">
+                <span class="price">{{item.price}}</span>
+                <span class="pound">{{item.price}}</span>
+              </p>
+              <a href="/html/detail.html?id={{item.id}}" class="ad-basket"></a>
+            </div>
+          </li>
+          {{/each}}
+      </script>-->
+            </ul>
+        </div>
+    </div>
+  <footer></footer>
+    <script src="/libs/require/require.js" charset="utf-8" data-main="/js/list.js"></script>
+  </body>
+</html>

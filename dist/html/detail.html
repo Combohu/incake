@@ -15,20 +15,30 @@
     <div class="detail_wrapper">
       <div class="preview">
         <div class="preview_wrapper">
-          <a href="" class="preview_aBtn">
-            <div class="preview_big">
-              <img src="{{product.preview_big}}" id="preview_big">
+          <a href="javascript:;void(0)" class="preview_aBtn">
+            <div class="preview_big" id="preview_big">
+              <div class="len" id="len"></div>
+              <img src="{{product.preview_big}}" id="middleImg1" class="preview_big1">
+              <img src="{{product.preview_big2}}" id="middleImg2" class="preview_big2">
+              <img src="{{product.preview_big3}}" id="middleImg3" class="preview_big3">
+              <img src="{{product.preview_big4}}" id="middleImg4" class="preview_big4">
+            </div>
+            <div class="fangDaJing" id="fangDaJing">
+              <img src="{{product.fangDaJing}}" id="bigImg1" class="bigImg">
+              <img src="{{product.fangDaJing2}}" id="bigImg2" class="bigImg">
+              <img src="{{product.fangDaJing3}}" id="bigImg3" class="bigImg">
+              <img src="{{product.fangDaJing4}}" id="bigImg4" class="bigImg">
             </div>
           </a>
           <div class="preview_small">
-            <a href="javascript:;"class="preview_smallPrev"></a>
-            <a href="javascript:;"class="preview_smallNext"></a>
+            <a href="javascript:;void(0)"class="preview_smallPrev"></a>
+            <a href="javascript:;void(0)"class="preview_smallNext"></a>
               <div class="preview_small_wrapper">
                 <ul class="preview_list">
-                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small1}}" id="preview_small1"></a></li>
-                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small2}}" id="preview_small2"></a></li>
-                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small3}}" id="preview_small3"></a></li>
-                  <li><a href="javascript:;" class="preview_smallA"><img src="{{product.preview_small4}}" id="preview_small4"></a></li>
+                  <li><a href="javascript:;void(0)" class="preview_smallA" id="preview_small1"><img src="{{product.preview_small1}}" id="preview_small1"></a></li>
+                  <li><a href="javascript:;void(0)" class="preview_smallA" id="preview_small2"><img src="{{product.preview_small2}}" id="preview_small2"></a></li>
+                  <li><a href="javascript:;void(0)" class="preview_smallA" id="preview_small3"><img src="{{product.preview_small3}}" id="preview_small3"></a></li>
+                  <li><a href="javascript:;void(0)" class="preview_smallA" id="preview_small4"><img src="{{product.preview_small4}}" id="preview_small4"></a></li>
                 </ul>
               </div>
           </div>
@@ -72,11 +82,11 @@
             数量：
           </div>
           <div class="content">
-            <a href="javascript:;" class="btn_sub"></a>
+            <a href="javascript:;void(0)" class="btn_sub" id="btn_sub"></a>
             <div class="content-wrapper">
-              <input type="text" class="text_amout" value="1">
+              <input type="text" class="text_amout" id="text_amout">
             </div>
-            <a href="javascript:;" class="btn_add"></a>
+            <a href="javascript:;void(0)" class="btn_add" id="btn_add"></a>
           </div>
         </div>
         <div class="addons">
@@ -93,11 +103,11 @@
           </ul>
         </div>
         <div class="option">
-          <a href="javascript:;"class="a_favor">
+          <a href="javascript:;void(0)"class="a_favor">
             <span class="aixin"></span>
             <span class="txt">喜欢</span>
           </a>
-          <a href="javascript:;" class="add_basket" id="add_basket">放入购物篮</a>
+          <a href="javascript:;void(0)" class="add_basket" id="add_basket">放入购物篮</a>
           <a href="http://localhost:1807/html/cart.html"  target="_blank" class="buy">立即购买</a>
         </div>
       </div>
@@ -106,8 +116,8 @@
     <!--商品详情！-->
     <div class="product_detail">
       <div class="header">
-        <a href="javascript:;" class="txt_product">商品详情</a>
-        <a href="javascript:;" class="txt_product">商品评价</a>
+        <a href="javascript:;void(0)" class="txt_product">商品详情</a>
+        <a href="javascript:;void(0)" class="txt_product">商品评价</a>
       </div>
       <div class="product_detail1">
           <div class="product_detail1Wrapper">
@@ -219,6 +229,15 @@
       </div>
     </div>
 </script>
+</div>
+<div class="bg" id="bg">
+<div class="bigBox">
+  <p class="info">您所选的商品已加入购物篮！</p>
+  <p class="btn">
+    <a href="javascript:;void(0)" class="btn-cancel" id="btn-cancel">再逛逛</a>
+    <a href="/html/cart.html" class="btn-sure">去结算</a>
+  </p>
+</div>
 </div>
   <footer></footer>
     <script src="/libs/require/require.js" charset="utf-8" data-main="/js/detail.js"></script>

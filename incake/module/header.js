@@ -10,6 +10,24 @@ define(["tools","jquery","cookie"],function (tools,$,cookie) {
           tools.$("ul",this)[0].style.display = "none";
         }
       }
+      $("#btn-zs").click(function(){
+        $(this).attr("href","http://localhost:1807/html/list.html?id=1");
+      })
+      $("#btn-qkl").click(function(){
+        $(this).attr("href","http://localhost:1807/html/list.html?id=2");
+      })
+      $("#btn-npl").click(function(){
+        $(this).attr("href","http://localhost:1807/html/list.html?id=3");
+      })
+      $("#btn-ms").click(function(){
+        $(this).attr("href","http://localhost:1807/html/list.html?id=4");
+      })
+      $("#btn-rz").click(function(){
+        $(this).attr("href","http://localhost:1807/html/list.html?id=5");
+      })
+      $("#btn-xp").click(function(){
+        $(this).attr("href","http://localhost:1807/html/list.html?id=6");
+      })
     }
     Header.prototype.localCity = function(){
       var localCity = tools.$(".localCity")[0];
@@ -39,6 +57,20 @@ define(["tools","jquery","cookie"],function (tools,$,cookie) {
           path:"/"
         })
       })
+    }
+    Header.prototype.num = function(){
+     var numValue =$("#ShopcartNum");
+      var amout = 0;
+       if ($.cookie("cart") && $.cookie("cart").length !==2){//[].length ==2
+          var cookie =JSON.parse($.cookie("cart"));
+         for (var i = 0; i < cookie.length; i++){
+            amout += cookie[i].num;
+          }
+          var num_cookie = amout;
+            numValue.text(num_cookie);
+      }else{
+        numValue.text(0);
+      }
     }
   return new Header();
 })

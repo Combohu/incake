@@ -6,6 +6,8 @@
 @import "detail.scss";
 @import "cart.scss";
 @import "strawberry.scss";
+@import "specials.scss";
+@import "list.scss";
 .page-container{
   width: 100%;
   position: relative;
@@ -234,4 +236,34 @@
   width: 28px;
   height: 28px;
   background-image: url(/images/best-choice/ad-basket.png);
+}
+.qrcode_{
+  position: fixed;
+  z-index: 999999;
+  width: 300px;
+  height: 460px;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, .6);
+  border-radius: 20px;
+}
+.qrcode_ img{
+  display: block;
+  margin: 20px auto 0;
+  width: 240px;
+  height: 424px;
+  border: none;
+  vertical-align: top;
+}
+.qrcode_ a{
+  position: absolute;
+  color: #505050;
+  display: block;
+  left: 10px;
+  top: 10px;
+  width: 27px;
+  height: 27px;
+  background-image: url(../images/best-choice/qrcode-close.png);
+  background-size: 27px 27px;
 }

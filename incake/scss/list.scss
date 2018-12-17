@@ -1,0 +1,120 @@
+.page{
+  width: 1263px;
+  margin-bottom: 40px;
+}
+.page .page_container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.page .page_container .list-categories{
+  width: 100%;
+  padding:  10px 0;
+  margin: 40px 0;
+  border-bottom:1px solid #45515e;
+}
+.page .page_container .list-categories .first{
+  height: 20px;
+  line-height: 20px;
+}
+.page .page_container .list-categories li{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.page .page_container .list-categories li .title{
+    display: inline-block;
+    float: left;
+    width: 60px;
+    color: #505050;
+    text-align: right;
+  }
+.page .page_container .list-categories li .content{
+      float: left;
+}
+.page .page_container .list-categories li .content a{
+  display: inline-block;
+  float: left;
+  width: 80px;
+  height: 20px;
+  margin-left: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 2px;
+  color: #505050;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.page .page_container .list-categories li .content .active{
+  background-color: #e9546b;
+  color: #fff;
+}
+.page .page_container .list-contents{
+  width: 101%;
+  height: 1230px;
+}
+.page .page_container .list-contents .normal{
+  position: relative;
+  float: left;
+  width: 291px;
+  margin: 0 12px 10px 0;
+  overflow: hidden;
+}
+.page .page_container .list-contents .normal .img{
+  position: relative;
+  width: 291px;
+  height: 291px;
+  overflow: hidden;
+}
+.page .page_container .list-contents .normal .img .link{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.page .page_container .list-contents .normal .text{
+  position: relative;
+  width: 100%;
+  height: 109px;
+}
+.page .page_container .list-contents .normal .text .desc{
+  padding: 14px 0 11px;
+  font-size: 14px;
+  color: #b5b5b5;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-left: 20px;
+}
+.page .page_container .list-contents .normal .text .name{
+  font-size: 14px;
+  color: #635859;
+  margin-left: 20px;
+}
+.page .page_container .list-contents .normal .text .name .cn{
+  padding-top: 10px;
+  font-style: 14px;
+  line-height: 30px;
+}
+.page .page_container .list-contents .normal .text .name .en{
+  font-style: 10px;
+  line-height: 30px;
+}
+.page .page_container .list-contents .normal .text .attr{
+  padding-top: 5px;
+  color: #e9546b;
+  margin-left: 20px;
+}
+.page .page_container .list-contents .normal .ad-basket{
+display: block;
+position: absolute;
+right: 20px;
+bottom: 15px;
+width: 28px;
+height: 28px;
+background-image: url(../images/best-choice/ad-basket.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50%;
+}

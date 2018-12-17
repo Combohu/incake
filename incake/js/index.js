@@ -12,13 +12,16 @@ require(["config"], function(){
       header.localCity();
       header.login();
       header.exit();
+      header.num();
+      $("#qrcode-close").click(function(){
+        $("#qrcode").remove();
+      })
 		}).then(function(){
 			$("#slider-wrapper").slider({
         goPrev:"goPrev",
         goNext:"goNext"
       });
 		})
-
     $.ajax({
       method:"POST",
       url:"http://localhost/java_script/incake_project/server/api/php/list.php",

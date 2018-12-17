@@ -8,10 +8,15 @@ require.config({
     "bootstrap":"libs/bootstrap/js/bootstrap",
     "tools":"libs/tools",
     "template":"libs/template-web",
-    "cookie":"libs/jquery.cookie"
+    "cookie":"libs/jquery.cookie",
+    "tool":"libs/tool",
+    "fly":"libs/fly/jquery.fly"
   },
   //垫片
-  shims:{
+  shim:{
+    "fly":{
+      deps:["jquery"]
+    },
     "bootstrap":{
       deps:["jquery"]
     }

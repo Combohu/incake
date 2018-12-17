@@ -12,21 +12,20 @@ require(["config"], function(){
         header.localCity();
         header.login();
         header.exit();
+        header.num()
     });
 //读取详情页传来的cookie数据，并解析后用来渲染模板字符串；
 var  ul =$("#list_active"),
      money = $("#money"),
      allPrice = 0,
-     str =$.cookie("cart"),
-     bg = tools.$(".empty_basket")[0],
-     json = JSON.parse(str);
-    // console.log(bg);
-     console.log(tools.$(".item").length);
+     bg = tools.$(".empty_basket")[0];
+     if ($.cookie("cart")){
+  var str =$.cookie("cart"),
+      json = JSON.parse(str);
 var html = template("pro_template",{cookies:json});
     $("#list_active").html(html);
     if (tools.$(".item").length) {
        bg.style.display = "none";
-       //  alert(123);
     }else{
       bg.style.display = "block";
     }
@@ -45,7 +44,6 @@ $("#list_active").on("click",".btn_sub",function(event){
   var currCookie1 = $.cookie("cart");
 //解析cookie，并存起来：
   var newJson1 = JSON.parse(currCookie1);
-      console.log(newJson1);
 //通过jQuery查找DOM元素的方法找到当前的按钮和input；
   var input = $(this).siblings().children(":first"),
 //该条商品的名称；
@@ -68,7 +66,7 @@ if (value > 1){
           }
 //修改完成以后把修改好的数据重新传回cookie：
   var newJson2 = JSON.stringify(newJson1);
-  $.cookie("cart",newJson2);
+  $.cookie("cart",newJson2,{path:"/"});
 //每次触发点击按键的时候，重新计算一次总计；
 var aLi = $("#list_active").find(".item"),
     gouXuan = $("#list_active").find(".btn_ckBox");
@@ -81,6 +79,7 @@ var aLi = $("#list_active").find(".item"),
           }
        }
 }
+header.num();
       })
 //给增加按钮绑定点击事件；
 $("#list_active").on("click",".btn_add",function(event){
@@ -101,7 +100,7 @@ $("#list_active").on("click",".btn_add",function(event){
         }
 //修改完成以后把修改好的数据重新传回cookie：
 var newJson4 = JSON.stringify(newJson3);
-$.cookie("cart",newJson4);
+$.cookie("cart",newJson4,{path:"/"});
 //每次触发点击按键的时候，重新计算一次总计；
 var aLi = $("#list_active").find(".item"),
     gouXuan = $("#list_active").find(".btn_ckBox");
@@ -113,6 +112,7 @@ var aLi = $("#list_active").find(".item"),
             money.html(allPrice);
           }
        }
+       header.num();
       })
 //当取消其中部分商品复选框时，总价也要相应的变化；
 var aLi = $("#list_active").find(".item"),
@@ -144,6 +144,7 @@ $(".list_footer").on("change",".text_checkALL",function(){
  })
 //绑定删除按键点击事件，删除该条json数据；
 $("#list_active").on("click",".btn_del",function(event){
+   var quanXuan = $(".text_checkALL");
    var data= $.cookie("cart");
    var arr = JSON.parse(data);
    var li = $(this).parents(".item");
@@ -163,6 +164,11 @@ for (var i = 0; i < arr.length; i++) {
            })
 //最后在DOM结构中删除掉；
        li.remove();
+           header.num();
+           if ($("#item").length<=0){
+             quanXuan.prop("checked",false);
+            $("#money").text(0);
+           }
 })
 
 //全选、复选功能
@@ -196,7 +202,8 @@ danXuan.eq(i).change(function(){
       }
 })
 }
-
-
+}else{
+  return;
+}
   })
 })

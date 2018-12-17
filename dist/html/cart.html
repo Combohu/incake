@@ -48,13 +48,13 @@
             <span class="cheaper">小计</span>
             <span class="operate">操作</span>
           </p>
-          <!--列表主体-->
+            <!--列表主体-->
           <div class="list_content">
             <div class="list_container">
               <ul class="list_regular" id="list_active">
                 <script type="text/html" id="pro_template">
                 {{each cookies json i}}
-                <li class="item">
+                <li class="item" id="item">
                   <div class="item_content">
                     <div class="ckBox">
                       <input class="btn_ckBox" type="checkbox" checked="checked"></a>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="c_operate">
                       <div class="c_operateCenter">
-                        <a href="http://localhost:1807/html/cart.html" class="btn_del">删除</a>
+                        <a href="javascript:;" class="btn_del">删除</a>
                       </div>
                     </div>
                   </div>

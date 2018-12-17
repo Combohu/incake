@@ -12,6 +12,7 @@ require(["config"], function(){
         header.localCity();
         header.login();
         header.exit();
+        header.num()
     })
   })
 })

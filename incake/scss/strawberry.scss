@@ -1,6 +1,7 @@
 .page_strawberry{
   width: 100%;
   height: 2186px;
+  background-image: url(../images/strawberry/body_bg.png);
 }
 .page_strawberry .page_container{
   width: 1200px;
@@ -24,4 +25,50 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
+}
+.page_strawberry .page_container .strawberry_container{
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+.page_strawberry .page_container .strawberry_container .cake{
+  position: relative;
+  width: 1000px;
+  height: 500px;
+}
+.page_strawberry .page_container .strawberry_container .cake .img{
+  position: absolute;
+  top: 0;
+  width: 450px;
+  height: 500px;
+  right: 0;
+}
+.page_strawberry .page_container .strawberry_container .cake .img img{
+  border: none;
+  vertical-align: top;
+}
+.page_strawberry .page_container .strawberry_container .cake .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 500px;
+}
+.page_strawberry .page_container .strawberry_container .cake .text img{
+  border: none;
+  vertical-align: top;
+}
+.page_strawberry .page_container .strawberry_container .cake .text .btn-buy{
+  display: block;
+  position: absolute;
+  bottom: 112px;
+  left: 27px;
+  width: 227px;
+  height: 56px;
+  background-image: url(../images/strawberry/btn_buy.png);
+  background-position: 0 0;
+}
+.page_strawberry .page_container .strawberry_container .cake .text .btn-buy:hover{
+    background-image: url(../images/strawberry/btn_buy.png);
+    background-position: 225px 0;
 }

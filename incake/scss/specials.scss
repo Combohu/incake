@@ -1,0 +1,194 @@
+.layout-container{
+  width: 100%;
+  overflow: hidden;
+}
+.layout-container .szone-page{
+  width: 100%;
+  background-image: url(../images/specials/bg.png);
+}
+.layout-container .szone-page .page-container{
+  width: 100%;
+  position: relative;
+}
+.layout-container .szone-page .page-container .szone-banner{
+  position: relative;
+  width: 1200px;
+  height: 995px;
+  margin: 0 auto;
+}
+.layout-container .szone-page .page-container .szone-banner .inner{
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  left: 50%;
+  width: 1920px;
+  height: 995px;
+  margin-left: -960px;
+  background-image: url(../images/specials/bannerNew.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.layout-container .szone-page .page-container .szone-container{
+  position: relative;
+  z-index: 2;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: -200px;
+  padding-bottom: 100px;
+}
+.layout-container .szone-page .page-container .szone-container .category{
+  position: relative;
+  z-index: 10;
+  width: 1200px;
+  padding-top: 110px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-title_cake{
+  width: 570px;
+  height: 40px;
+  margin: 0 auto;
+  background-image: url(../images/specials/category_title_cake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content{
+  width: 1200px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section{
+  width: 1200px;
+  height:auto;
+  padding-top: 60px;
+  position: relative;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-title_new{
+  width: 106px;
+  height: 48px;
+  margin: 0 auto;
+  background-image: url(../images/specials/section_title_new.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-title_hot{
+  width: 106px;
+  height: 48px;
+  margin: 0 auto;
+  background-image: url(../images/specials/section_title_hot.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content{
+  width: 1200px;
+  height: 540px;
+  padding-top: 60px;
+  border-bottom:  1px dashed #ddd;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .cake{
+  float: left;
+  width: 270px;
+  padding-bottom: 58px;
+  margin: 0 15px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .cake .img{
+  display: block;
+  width: 268px;
+  height: 268px;
+  border: 1px solid #dadada;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .cake .img img{
+  width: 100%;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text{
+  width: 270px;
+  height: 152px;
+  padding-top: 24px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .name{
+  width: 270px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .name .cn{
+  height: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #f9877d;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .name .en{
+  height: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+  color: #838283;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .unit-price{
+  padding-top: 14px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .unit-price .current{
+  height: 24px;
+  color: #f9877d;
+  line-height: 24px;
+  text-align: center;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .unit-price .current .price{
+  font-size: 18px;
+  font-weight: 700;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .unit-price .current .price i{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .text .unit-price .original{
+  height: 16px;
+  color: #838283;
+  font-style: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: line-through;
+}
+.layout-container .szone-page .page-container .szone-container .category .category-content .section .section-content .btn-buy{
+  display: block;
+  width: 140px;
+  height: 38px;
+  margin: 16px auto 0;
+  font-size:18px;
+  color: #fff;
+  background-color: #4fcce1;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 19px;
+}
+.category .category-title_tea{
+  width: 570px;
+  height: 40px;
+  margin: 0 auto;
+  background-image: url(../images/specials/category_title_tea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.szone-rule{
+  width: 100%;
+  background-color: #71c0e1;
+}
+.szone-rule dl{
+  width: 580px;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: #fff;
+}
+.szone-rule dt{
+  padding-bottom: 18px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.szone-rule dd{
+  font-size: 14px;
+  line-height: 30px;
+}

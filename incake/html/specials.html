@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="shortcut icon" href="/images/header/tubiao.ico">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body>
+  <header></header>
+<!--szone page begin!-->
+<div class="layout-container">
+<div class="szone-page" id="szonePage">
+<div class="page-container">
+<!-- banner begin -->
+<div class="szone-banner">
+  <div class="inner"></div>
+</div>
+<!-- banner end -->
+<!-- body begin -->
+<div class="szone-container">
+  <!-- 蛋糕类 begin -->
+  <div class="category">
+    <div class="category-title_cake"></div>
+    <div class="category-content" id="cakeCategory">
+      <!-- 新品列表模板 begin -->
+        <div class="section">
+          <div class="section-title_new"></div>
+            <ul class="section-content" id="section-content">
+              <script type="text/html" id="list-template">
+                {{each list_contents  item  i}}
+              <li class="cake">
+                <a class="img" href="/html/detail.html?id={{item.id}}">
+                  <img src="{{item.img}}">
+                </a>
+                <div class="text">
+                  <div class="name">
+                    <p class="cn">{{item.introduce}}</p>
+                    <p class="en">{{item.en_tittle}}</p>
+                  </div>
+                  <div class="unit-price">
+                    <p class="current">
+                      <span class="price"><i>￥</i>{{item.price}}</span>
+                      <span class="pound">/{{item.pound}}</span>
+                    </p>
+                    <p class="original">￥{{item.price}}/{{item.pound}}</p>
+                  </div>
+                </div>
+                <a href="/html/detail.html?id={{item.id}}" class="btn-buy">立即购买</a>
+              </li>
+              {{/each}}
+              </script>
+            </ul>
+        </div>
+      <!-- 新品列表模板 end -->
+      <!-- 热卖列表模板 begin -->
+        <div class="section">
+          <div class="section-title_hot"></div>
+            <ul class="section-content" id="section-content2">
+              <script type="text/javascript" id="list2-template">
+                  {{each list2_contents  item  i}}
+              <li class="cake">
+                <a class="img" href="/html/detail.html?id={{item.id}}">
+                  <img src="{{item.img}}">
+                </a>
+                <div class="text">
+                  <div class="name">
+                    <p class="cn">{{item.introduce}}</p>
+                    <p class="en">{{item.en_tittle}}</p>
+                  </div>
+                  <div class="unit-price">
+                    <p class="current">
+                      <span class="price"><i>￥</i>{{item.price}}</span>
+                      <span class="pound">/{{item.pound}}</span>
+                    </p>
+                    <p class="original">￥{{item.price}}/{{item.pound}}</p>
+                  </div>
+                </div>
+                <a href="/html/detail.html?id={{item.id}}" class="btn-buy">立即购买</a>
+              </li>
+                {{/each}}
+            </script>
+            </ul>
+        </div>
+      <!-- 热卖列表模板 end -->
+      </div>
+    </div>
+  <!-- 蛋糕类 end -->
+  <!-- 下午茶 begin -->
+  <div class="category" id="teaCategory">
+      <div class="category-title_tea"></div>
+      <div class="category-content">
+        <div class="section" style="height:2162px">
+          <ul class="section-content" id="section-content3">
+        <script type="text/javascript" id="list3-template">
+          {{each list3_contents  item  i }}
+            <li class="cake">
+              <a class="img" href="/html/detail.html?id={{item.id}}">
+                <img src="{{item.img}}">
+              </a>
+              <div class="text">
+                <div class="name">
+                  <p class="cn">{{item.cn_tittle}}</p>
+                  <p class="en">{{item.en_tittle}}</p>
+                </div>
+                <div class="unit-price">
+                  <p class="current">
+                    <span class="price"><i>￥</i>{{item.price}}</span>
+                    <span class="pound">/{{item.pound}}</span>
+                  </p>
+                  <p class="original">￥{{item.price}}/{{item.pound}}</p>
+                </div>
+              </div>
+              <a href="/html/detail.html?id={{item.id}}" class="btn-buy">立即购买</a>
+            </li>
+            {{/each}}
+        </script>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <!-- 下午茶 end -->
+</div>
+<!-- body end -->
+<!-- rule begin -->
+<div class="szone-rule">
+  <dl>
+    <dt>活动规则</dt>
+    <dd>1. 可配送城市：上海、福州、苏州、厦门、南京、杭州、宁波、青岛、扬州、镇江（产品请详见各地官网，如当地没有此款产品则不参加特惠活动）</dd>
+    <dd>2. 本活动不可使用代金卡，不与其他优惠同享</dd>
+  </dl>
+</div>
+<!-- rule end -->
+</div>
+</div>
+<!-- szone page end -->
+</div>
+  <!-- layout container end -->
+  <footer></footer>
+    <script src="/libs/require/require.js" charset="utf-8" data-main="/js/specials.js"></script>
+  </body>
+</html>
